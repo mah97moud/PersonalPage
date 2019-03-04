@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+$mainColor: #041230;
+$secColor:  #E3872D;
+body{
+    font-family: "Montserrat" ,sans-serif; 
+}
+.banner{
+    background: $mainColor;
+    padding-top: 145px;
+    padding-bottom: 155px;
+    .personal-img{
+        width: 220px;
+        height: 220px;
+        border: 8px solid #ffffff80;
+        border-radius: 50%;
+        margin: auto;
+        .prof-img{
+            width: 100%;
+            border-radius: 50%;
+            
+        }
+    }
+    .name{
+        margin: auto;
+    }
+    .job{
+        margin: auto;
+        text-align: center;
+        .text{
+            color: #fff;
+            font-size: 24px;
+        }
+    }
+}
+#title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 30px;
+    span{
+        color: $secColor;
+        font-weight: 500; 
+    }
+}
+#arrow{
+    
+    padding-top: 100px;
+    text-align: center;
+    .arrow-icon{
+        color: #fff;
+        text-decoration: none;
+
+    }
+    .arrow-icon:hover{
+        color: #fff;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Montserrat" ,sans-serif;
+}
+
+.banner {
+  background: #041230;
+  padding-top: 145px;
+  padding-bottom: 155px;
+}
+
+.banner .personal-img {
+  width: 220px;
+  height: 220px;
+  border: 8px solid #ffffff80;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.banner .personal-img .prof-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.banner .name {
+  margin: auto;
+}
+
+.banner .job {
+  margin: auto;
+  text-align: center;
+}
+
+.banner .job .text {
+  color: #fff;
+  font-size: 24px;
+}
+
+#title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+#title span {
+  color: #E3872D;
+  font-weight: 500;
+}
+
+#arrow {
+  padding-top: 100px;
+  text-align: center;
+}
+
+#arrow .arrow-icon {
+  color: #fff;
+  text-decoration: none;
+}
+
+#arrow .arrow-icon:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
