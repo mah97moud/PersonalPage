@@ -15,7 +15,6 @@ body {
 .meun-col {
   background: #091a32;
   position: fixed;
-  height: 655px;
 }
 
 .meun-col .logoBox {
@@ -84,7 +83,7 @@ body {
 
 .meun-col .arrowBox .btn-left {
   top: 8px;
-  left: 23px;
+  left: 24px;
   height: 36px;
   display: block;
 }
@@ -187,6 +186,10 @@ body {
   color: #000;
 }
 
+.aboutSection .secStyle {
+  padding-left: 15px;
+}
+
 .aboutSection .secHead {
   border-left: 6px solid #E3872D;
   padding-left: 25px;
@@ -208,14 +211,14 @@ body {
 }
 
 .aboutSection .imgBox {
-  width: 400px;
+  width: 100%;
   height: 550px;
   border: 12px solid #091a32;
   position: relative;
 }
 
 .aboutSection .imgBox .imgsty {
-  width: 410px;
+  width: 104%;
   height: 535px;
   position: absolute;
   right: 16px;
@@ -232,11 +235,11 @@ body {
 .aboutSection .infoText {
   color: #333;
   background: #00000000;
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 12px;
+  line-height: 2.8;
   letter-spacing: 0.5px;
   word-wrap: break-word;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .aboutSection .infoText span {
@@ -247,17 +250,27 @@ body {
   padding-top: 20px;
 }
 
-.aboutSection .mainInfo .personalInfo {
+.aboutSection .mainInfo .infoList {
+  list-style: none;
+}
+
+.aboutSection .mainInfo .infoList .personalInfo {
   margin-bottom: 25px;
   font-weight: 700;
   font-size: 13px;
   color: #000;
-  min-width: 85px;
 }
 
-.aboutSection .mainInfo .personalInfo span {
-  margin-left: 30px;
+.aboutSection .mainInfo .infoList .personalInfo label {
+  min-width: 100px;
+}
+
+.aboutSection .mainInfo .infoList .personalInfo span {
   font-weight: 500;
+}
+
+.aboutSection .mainInfo .btnSection {
+  margin: 0;
 }
 
 .aboutSection .mainInfo .btnSection .btn {
@@ -265,6 +278,7 @@ body {
   height: 50px;
   background: #E3872D;
   text-align: center;
+  margin-right: 1px;
 }
 
 .aboutSection .mainInfo .btnSection .btn .btnLink {
@@ -277,5 +291,62 @@ body {
 
 .paddZero {
   padding: 0;
+}
+
+.abilitieSection {
+  background: #f5f7fd;
+  padding-top: 90px;
+}
+
+.abilitieSection .secHead {
+  font-size: 24px;
+  color: #091a32;
+  padding-bottom: 20px;
+}
+
+.abilitieSection .secText {
+  color: #333;
+  font-size: 15px;
+}
+
+.abilitieSection .abilitieHead {
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+}
+
+.abilitieSection .abilitieHead .experience {
+  font-weight: 500;
+}
+
+.abilitieSection .abilitieLine {
+  height: 5px;
+  border-radius: 2px;
+  border: 0.5px solid #091a32;
+  background: #dcdee3;
+  margin-bottom: 25px;
+}
+
+.abilitieSection .abilitieLine .percentageColor {
+  background-color: #091a32;
+  height: 100%;
+  border: 0.5px solid #091a32;
+}
+
+.abilitieSection .abilitieLine .perBoot {
+  width: 90%;
+}
+
+.abilitieSection .abilitieLine .perHtml {
+  width: 80%;
+}
+
+.abilitieSection .abilitieLine .perCss {
+  width: 80%;
+}
+
+.abilitieSection .abilitieLine .perJav {
+  width: 75%;
 }
 /*# sourceMappingURL=style.css.map */

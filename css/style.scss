@@ -71,14 +71,12 @@ body {
         }
         .btn-left {
             top: 8px;
-            left: 23px;
+            left: 24px;
             height: 36px;
             display: block;
         }
     }
 }
-
-
 
 .paddLeftRight {
     padding-left: 100px;
@@ -88,7 +86,8 @@ body {
 .paddBottom {
     padding-bottom: 100px;
 }
-.fullBody{
+
+.fullBody {
     .arrowBox {
         position: fixed;
         top: 400px;
@@ -108,6 +107,7 @@ body {
         }
     }
 }
+
 .banner {
     background: $blueColor;
     padding-top: 145px;
@@ -166,6 +166,9 @@ body {
     padding-top: 100px;
     background: #00000000;
     color: #000;
+    .secStyle {
+        padding-left: 15px;
+    }
     .secHead {
         border-left: 6px solid $orangColor;
         padding-left: 25px;
@@ -184,12 +187,12 @@ body {
         }
     }
     .imgBox {
-        width: 400px;
+        width: 100%;
         height: 550px;
         border: 12px solid $blueColor;
         position: relative;
         .imgsty {
-            width: 410px;
+            width: 104%;
             height: 535px;
             position: absolute;
             right: 16px;
@@ -205,34 +208,41 @@ body {
     .infoText {
         color: #333;
         background: #00000000;
-        font-size: 14px;
-        line-height: 1.8;
+        font-size: 12px;
+        line-height: 2.8;
         letter-spacing: 0.5px;
         word-wrap: break-word;
-        font-weight: 500;
+        font-weight: 600;
         span {
             color: $orangColor;
         }
     }
     .mainInfo {
         padding-top: 20px;
-        .personalInfo {
-            margin-bottom: 25px;
-            font-weight: 700;
-            font-size: 13px;
-            color: #000;
-            min-width: 85px;
-            span {
-                margin-left: 30px;
-                font-weight: 500;
+        .infoList {
+            list-style: none;
+            .personalInfo {
+                margin-bottom: 25px;
+                font-weight: 700;
+                font-size: 13px;
+                color: #000;
+                
+                label{
+                    min-width: 100px;
+                }
+                span {
+                    font-weight: 500;
+                }
             }
         }
         .btnSection {
+            margin: 0;
             .btn {
                 width: 175px !important;
                 height: 50px;
                 background: $orangColor;
                 text-align: center;
+                margin-right: 1px;
                 .btnLink {
                     padding-top: 7px !important;
                     display: block;
@@ -247,4 +257,51 @@ body {
 
 .paddZero {
     padding: 0;
+}
+
+.abilitieSection {
+    background: #f5f7fd;
+    padding-top: 90px;
+    .secHead {
+        font-size: 24px;
+        color: $blueColor;
+        padding-bottom: 20px;
+    }
+    .secText {
+        color: #333;
+        font-size: 15px;
+    }
+    .abilitieHead {
+        padding-bottom: 10px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #000;
+        .experience {
+            font-weight: 500;
+        }
+    }
+    .abilitieLine {
+        height: 5px;
+        border-radius: 2px;
+        border: .5px solid $blueColor;
+        background: #dcdee3;
+        margin-bottom: 25px;
+        .percentageColor {
+            background-color: $blueColor;
+            height: 100%;
+            border: .5px solid $blueColor;
+        }
+        .perBoot {
+            width: 90%;
+        }
+        .perHtml {
+            width: 80%;
+        }
+        .perCss {
+            width: 80%;
+        }
+        .perJav {
+            width: 75%;
+        }
+    }
 }
