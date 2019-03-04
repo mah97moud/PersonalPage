@@ -5,11 +5,20 @@
 }
 
 body {
-  font-family: "Montserrat" ,sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.paddLeftRight {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.paddBottom {
+  padding-bottom: 100px;
 }
 
 .banner {
-  background: #041230;
+  background: #091a32;
   padding-top: 145px;
   padding-bottom: 155px;
 }
@@ -68,5 +77,103 @@ body {
 #arrow .arrow-icon:hover {
   color: #fff;
   text-decoration: none;
+}
+
+.aboutSection {
+  padding-top: 100px;
+  background: #00000000;
+  color: #000;
+}
+
+.aboutSection .secHead {
+  border-left: 6px solid #E3872D;
+  padding-left: 25px;
+  line-height: 1;
+  margin-bottom: 100px;
+}
+
+.aboutSection .secHead .text {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -.5px;
+  margin-bottom: 0;
+}
+
+.aboutSection .secHead .belowText {
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.aboutSection .imgBox {
+  width: 400px;
+  height: 550px;
+  border: 12px solid #091a32;
+  position: relative;
+}
+
+.aboutSection .imgBox .imgsty {
+  width: 410px;
+  height: 535px;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+
+.aboutSection .infoHead {
+  line-height: 1;
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.aboutSection .infoText {
+  color: #333;
+  background: #00000000;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+  font-weight: 500;
+}
+
+.aboutSection .infoText span {
+  color: #E3872D;
+}
+
+.aboutSection .mainInfo {
+  padding-top: 20px;
+}
+
+.aboutSection .mainInfo .personalInfo {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #000;
+  min-width: 85px;
+}
+
+.aboutSection .mainInfo .personalInfo span {
+  margin-left: 30px;
+  font-weight: 500;
+}
+
+.aboutSection .mainInfo .btnSection .btn {
+  width: 175px !important;
+  height: 50px;
+  background: #E3872D;
+  text-align: center;
+}
+
+.aboutSection .mainInfo .btnSection .btn .btnLink {
+  padding-top: 7px !important;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.paddZero {
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
