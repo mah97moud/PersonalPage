@@ -15,6 +15,7 @@ body {
 .meun-col {
   background: #091a32;
   position: fixed;
+  height: 655px;
 }
 
 .meun-col .logoBox {
