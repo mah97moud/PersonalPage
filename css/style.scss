@@ -4,21 +4,112 @@
     border: 0;
 }
 
-$mainColor: #091a32;
-$secColor: #E3872D;
+$blueColor: #091a32;
+$orangColor: #E3872D;
 body {
     font-family: "Montserrat", sans-serif;
 }
+
+.cus-container {
+    padding: 0 !important;
+}
+
+.meun-col {
+    background: $blueColor;
+    position: fixed;
+    .logoBox {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: auto;
+    }
+    .menuBox {
+        padding-top: 50px;
+        margin-left: 60px;
+        position: relative;
+        .menuList {
+            list-style-type: none;
+            .menuItem {
+                padding-bottom: 19px;
+                .menuLink {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .socialBoxIcon {
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 26px;
+        .socialIcon {
+            display: block;
+            float: left;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            .iconLink {
+                color: #ffffff;
+            }
+            .iconLink:hover {
+                color: $orangColor;
+            }
+        }
+    }
+    .arrowBox {
+        position: absolute;
+        top: 400px;
+        left: 280px;
+        .btnArrow {
+            cursor: pointer;
+            background: $orangColor;
+            color: #fff;
+            border-radius: 0;
+            position: absolute;
+        }
+        .btn-left {
+            top: 8px;
+            left: 23px;
+            height: 36px;
+            display: block;
+        }
+    }
+}
+
+
 
 .paddLeftRight {
     padding-left: 100px;
     padding-right: 100px;
 }
-.paddBottom{
+
+.paddBottom {
     padding-bottom: 100px;
 }
+.fullBody{
+    .arrowBox {
+        position: fixed;
+        top: 400px;
+        left: 280px;
+        .btnArrow {
+            cursor: pointer;
+            background: $orangColor;
+            color: #fff;
+            border-radius: 0;
+            position: absolute;
+        }
+        .btn-right {
+            top: 8px;
+            left: 57px;
+            height: 36px;
+            display: none;
+        }
+    }
+}
 .banner {
-    background: $mainColor;
+    background: $blueColor;
     padding-top: 145px;
     padding-bottom: 155px;
     .personal-img {
@@ -53,7 +144,7 @@ body {
     font-weight: 300;
     padding-top: 30px;
     span {
-        color: $secColor;
+        color: $orangColor;
         font-weight: 500;
     }
 }
@@ -76,7 +167,7 @@ body {
     background: #00000000;
     color: #000;
     .secHead {
-        border-left: 6px solid $secColor;
+        border-left: 6px solid $orangColor;
         padding-left: 25px;
         line-height: 1;
         margin-bottom: 100px;
@@ -95,7 +186,7 @@ body {
     .imgBox {
         width: 400px;
         height: 550px;
-        border: 12px solid $mainColor;
+        border: 12px solid $blueColor;
         position: relative;
         .imgsty {
             width: 410px;
@@ -120,7 +211,7 @@ body {
         word-wrap: break-word;
         font-weight: 500;
         span {
-            color: $secColor;
+            color: $orangColor;
         }
     }
     .mainInfo {
@@ -131,19 +222,19 @@ body {
             font-size: 13px;
             color: #000;
             min-width: 85px;
-            span{
+            span {
                 margin-left: 30px;
                 font-weight: 500;
             }
         }
-        .btnSection{
-            .btn{
-                width: 175px!important;
+        .btnSection {
+            .btn {
+                width: 175px !important;
                 height: 50px;
-                background: $secColor;
+                background: $orangColor;
                 text-align: center;
-                .btnLink{
-                    padding-top: 7px!important;
+                .btnLink {
+                    padding-top: 7px !important;
                     display: block;
                     text-decoration: none;
                     color: #fff;
@@ -153,6 +244,7 @@ body {
         }
     }
 }
-.paddZero{
+
+.paddZero {
     padding: 0;
 }
