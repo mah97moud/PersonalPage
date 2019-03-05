@@ -204,6 +204,7 @@ body {
   font-weight: 600;
   letter-spacing: -.5px;
   margin-bottom: 0;
+  color: #000;
 }
 
 .aboutSection .secHead .belowText {
@@ -349,5 +350,105 @@ body {
 
 .abilitieSection .abilitieLine .perJav {
   width: 75%;
+}
+
+.serviceSection {
+  background: #fff;
+  padding-top: 100px;
+}
+
+.serviceSection .secHead {
+  border-left: 6px solid #E3872D;
+  padding-left: 25px;
+  line-height: 1;
+  margin-bottom: 100px;
+}
+
+.serviceSection .secHead .text {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -.5px;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.serviceSection .secHead .belowText {
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.serviceSection .card {
+  padding: 40px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0.5px 0.5px 18px 0px #ccc;
+          box-shadow: 0.5px 0.5px 18px 0px #ccc;
+}
+
+.serviceSection .card .icon {
+  display: block;
+  width: 45px;
+  height: 45px;
+  color: #E3872D;
+  margin-bottom: 30px;
+}
+
+.serviceSection .card .icon svg {
+  color: #E3872D;
+}
+
+.serviceSection .card .card-body {
+  padding: 0;
+}
+
+.serviceSection .card .card-body .cardHead {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.serviceSection .card .card-body p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.mrgBottom-30 {
+  margin-bottom: 35px;
+}
+
+.creativeSection .creativeNavBar .NavBarNav {
+  list-style: none;
+}
+
+.creativeSection .creativeNavBar .NavBarNav .navItem {
+  float: left;
+  padding-right: 45px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.creativeSection .creativeNavBar .NavBarNav .navItem .navLink {
+  color: #000;
+}
+
+.creativeSection .creativeNavBar .NavBarNav .navItem .navLink:hover {
+  color: #E3872D;
+  text-decoration: none;
+}
+
+.creativeSection .creativeNavBar .NavBarNav .navItem.active .navLink {
+  color: #BD0A0D;
+}
+
+.creativeSection .box {
+  margin-bottom: 30px;
+  width: 370px;
+  height: 600px;
+}
+
+.creativeSection .box img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
