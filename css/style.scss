@@ -14,6 +14,11 @@ body {
     padding: 0 !important;
 }
 
+.paddLRInMOpen {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .meun-col {
     background: $blueColor;
     position: fixed;
@@ -93,6 +98,7 @@ body {
         position: fixed;
         top: 400px;
         left: 280px;
+        z-index: 1000;
         .btnArrow {
             cursor: pointer;
             background: $orangColor;
@@ -233,6 +239,12 @@ body {
                 }
                 span {
                     font-weight: 500;
+                    .listLink {
+                        color: #000;
+                    }
+                    .listLink:hover {
+                        text-decoration: none;
+                    }
                 }
             }
         }
@@ -338,13 +350,13 @@ body {
             height: 45px;
             color: $orangColor;
             margin-bottom: 30px;
-            svg{
+            svg {
                 color: #E3872D;
             }
         }
         .card-body {
             padding: 0;
-            .cardHead{
+            .cardHead {
                 color: #000;
                 font-size: 22px;
                 font-weight: 600;
@@ -357,42 +369,209 @@ body {
         }
     }
 }
-.mrgBottom-30{
+
+.mrgBottom-30 {
     margin-bottom: 35px;
 }
-.creativeSection{
-    .creativeNavBar{
-        .NavBarNav{
+
+.creativeSection {
+    .creativeNavBar {
+        .NavBarNav {
             list-style: none;
-            .navItem{
+            .navItem {
                 float: left;
                 padding-right: 45px;
                 font-size: 16px;
                 font-weight: 600;
-                .navLink{
+                .navLink {
                     color: #000;
                 }
-                .navLink:hover{
+                .navLink:hover {
                     color: $orangColor;
                     text-decoration: none;
                 }
             }
-            .navItem.active{
-                .navLink{
+            .navItem.active {
+                .navLink {
                     color: #BD0A0D;
                 }
-                
             }
         }
     }
-    .box{
+    .box {
         margin-bottom: 30px;
         width: 370px;
         height: 600px;
-        img{
+        img {
             width: 100%;
             height: 100%;
         }
     }
+}
 
+.feedbackSection {
+    background: url("../img/3.jpg") no-repeat fixed center;
+    background-size: cover;
+    .carousel {
+        .carousel-inner {
+            background: #38475dd9;
+            padding-top: 100px;
+        }
+    }
+    .iconBox {
+        color: $orangColor;
+        padding-bottom: 50px;
+    }
+    .text {
+        width: 70%;
+        margin: auto;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        padding-bottom: 50px;
+    }
+    .name {
+        text-align: center;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 300;
+    }
+}
+
+.bgGray {
+    background: #f5f7fd;
+}
+
+.paddTop {
+    padding-top: 100px;
+}
+
+.latestNewsSection {
+    .card {
+        .cardLink {
+            color: $blueColor !important;
+            font-weight: 700 !important;
+        }
+        .cardLink:hover {
+            color: $orangColor !important;
+            text-decoration: none !important;
+        }
+        .cardHead {
+            color: #333 !important;
+            color: #333 !important;
+            font-size: 14px !important;
+            font-weight: 400 !important;
+        }
+        .cardImg {
+            width: 100%;
+            height: 16rem;
+        }
+        padding: 0;
+        .card-body {
+            padding: 2rem;
+            height: 300px;
+            .card-text {
+                color: #333;
+                font-size: 15px;
+                line-height: 1.5rem;
+                font-weight: 400;
+            }
+        }
+        .cardFooter {
+            padding: 2rem;
+            .btnOrange {
+                width: 150px;
+                height: 50px;
+                margin-left: 0;
+                padding: 0;
+                background: $orangColor;
+                color: #fff;
+                font-weight: 600;
+                padding-top: 12px;
+            }
+        }
+    }
+}
+
+.contactUsSection {
+    .getInTouch {
+        .contHead {
+            color: #000;
+            font-weight: 500;
+            margin-bottom: 40px;
+            line-height: 1rem;
+            font-size: 1.8rem;
+        }
+        .contList {
+            list-style: none;
+            .contItem {
+                margin-bottom: 25px;
+                font-weight: 700;
+                font-size: 13px;
+                color: #000;
+                label {
+                    min-width: 70px;
+                }
+                span {
+                    font-weight: 500;
+                    .listLink {
+                        color: #000;
+                    }
+                    .listLink:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .contForm {
+        .formInput {
+            height: 60px;
+            width: 100%;
+            border-bottom: 1px solid $blueColor;
+            padding-top: 25px;
+            margin-bottom: 20px;
+        }
+        .formTextarea {
+            height: 100px;
+            text-align: left;
+        }
+        .formInput:focus {
+            outline: none;
+        }
+        .btnOrange {
+            width: 200px;
+            height: 50px;
+            margin: 20px;
+            margin-left: 0;
+            padding: 0;
+            background: $orangColor;
+            color: #fff;
+            font-weight: 600;
+            padding-top: 3px;
+        }
+    }
+}
+
+.buttonUp {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: -100px;
+    right: 45px;
+    z-index: 1000;
+    .btnUp {
+        background: $orangColor;
+        color: #fff;
+    }
+}
+
+.pageFooter {
+    background: $blueColor;
+    .copyRight {
+        text-align: left;
+        color: #ffffff;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
 }
