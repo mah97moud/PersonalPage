@@ -38,8 +38,10 @@ $(document).ready(function () {
     var screenWidth = $(window).width();
     if(screenWidth <= 768 ){
         $(".meun-col").hide();
+        $(".imgBox").hide();
     }else{
         $(".meun-col").show();   
+        $(".imgBox").show();
     }
     
 });
