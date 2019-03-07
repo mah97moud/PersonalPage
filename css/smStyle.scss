@@ -1,0 +1,214 @@
+$blueColor: #091a32;
+$orangColor: #E3872D;
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .meun-col {
+        background: $blueColor;
+        position: fixed;
+        padding-bottom: 20px;
+        .logoBox {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin: auto;
+        }
+        .navbarIcon {
+            color: #fff;
+        }
+        .menuBox {
+            padding-top: 50px;
+            margin-left: 60px;
+            position: relative;
+            .menuList {
+                list-style-type: none;
+                .menuItem {
+                    padding-bottom: 19px;
+                    .menuLink {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .socialBoxIcon {
+            margin: auto;
+            padding-top: 15px;
+            padding-bottom: 26px;
+            .socialIcon {
+                display: block;
+                float: left;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                .iconLink {
+                    color: #ffffff;
+                }
+                .iconLink:hover {
+                    color: $orangColor;
+                }
+            }
+        }
+        .arrowBox {
+            position: absolute;
+            top: 400px;
+            left: 198px;
+            .btnArrow {
+                cursor: pointer;
+                background: $orangColor;
+                color: #fff;
+                border-radius: 0;
+                position: absolute;
+            }
+            .btn-left {
+                top: 8px;
+                left: 24px;
+                height: 36px;
+                display: block;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .meun-col {
+        background: $blueColor;
+        position: fixed;
+        padding-bottom: 20px;
+        .logoBox {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin: auto;
+        }
+        .navbarIcon {
+            color: #fff;
+        }
+        .menuBox {
+            padding-top: 50px;
+            margin-left: 60px;
+            position: relative;
+            .menuList {
+                list-style-type: none;
+                .menuItem {
+                    padding-bottom: 19px;
+                    .menuLink {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .socialBoxIcon {
+            margin: auto;
+            padding-top: 15px;
+            padding-bottom: 26px;
+            .socialIcon {
+                display: block;
+                float: left;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                .iconLink {
+                    color: #ffffff;
+                }
+                .iconLink:hover {
+                    color: $orangColor;
+                }
+            }
+        }
+        .arrowBox {
+            position: absolute;
+            top: 400px;
+            left: 198px;
+            .btnArrow {
+                cursor: pointer;
+                background: $orangColor;
+                color: #fff;
+                border-radius: 0;
+                position: absolute;
+            }
+            .btn-left {
+                top: 8px;
+                left: 24px;
+                height: 36px;
+                display: block;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .meun-col {
+        background: $blueColor;
+        position: fixed;
+        padding-bottom: 20px;
+        .logoBox {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin: auto;
+        }
+        .navbarIcon {
+            color: #fff;
+        }
+        .menuBox {
+            padding-top: 50px;
+            margin-left: 60px;
+            position: relative;
+            .menuList {
+                list-style-type: none;
+                .menuItem {
+                    padding-bottom: 19px;
+                    .menuLink {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .socialBoxIcon {
+            margin: auto;
+            padding-top: 15px;
+            padding-bottom: 26px;
+            .socialIcon {
+                display: block;
+                float: left;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                .iconLink {
+                    color: #ffffff;
+                }
+                .iconLink:hover {
+                    color: $orangColor;
+                }
+            }
+        }
+        .arrowBox {
+            position: absolute;
+            top: 400px;
+            left: 198px;
+            .btnArrow {
+                cursor: pointer;
+                background: $orangColor;
+                color: #fff;
+                border-radius: 0;
+                position: absolute;
+            }
+            .btn-left {
+                top: 8px;
+                left: 24px;
+                height: 36px;
+                display: block;
+            }
+        }
+    }
+}

@@ -34,4 +34,12 @@ $(document).ready(function () {
             "display": "none",
         });
     });
+    // Hide menu in small Screen
+    var screenWidth = $(window).width();
+    if(screenWidth <= 768 ){
+        $(".meun-col").hide();
+    }else{
+        $(".meun-col").show();   
+    }
+    
 });
