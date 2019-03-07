@@ -841,9 +841,9 @@ body {
 .buttonUp {
     width: 50px;
     height: 50px;
-    position: absolute;
-    bottom: -100px;
-    right: 45px;
+    position: fixed;
+    bottom: 40px;
+    right: 75px;
     z-index: 1000;
     .btnUp {
         background: $orangColor;
