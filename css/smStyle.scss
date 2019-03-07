@@ -2,7 +2,7 @@ $blueColor: #091a32;
 $orangColor: #E3872D;
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .meun-col {
+    .meun-col-sm {
         background: $blueColor;
         position: fixed;
         padding-bottom: 20px;
@@ -73,7 +73,7 @@ $orangColor: #E3872D;
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .meun-col {
+    .meun-col-sm {
         background: $blueColor;
         position: fixed;
         padding-bottom: 20px;
@@ -144,7 +144,7 @@ $orangColor: #E3872D;
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .meun-col {
+    .meun-col-sm {
         background: $blueColor;
         position: fixed;
         padding-bottom: 20px;

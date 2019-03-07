@@ -43,5 +43,7 @@ $(document).ready(function () {
         $(".meun-col").show();   
         $(".imgBox").show();
     }
-    
+    if(screenWidth > 768){
+        $(".pageMenu").hide();
+    }
 });

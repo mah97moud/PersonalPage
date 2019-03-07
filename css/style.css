@@ -26,10 +26,213 @@ body {
   padding-bottom: 100px;
 }
 
+@media (max-width: 575.98px) {
+  .meun-col-sm {
+    background: #091a32;
+    padding-bottom: 20px;
+  }
+  .meun-col-sm .logoBox {
+    padding-top: 50px;
+    margin: auto;
+  }
+  .meun-col-sm .navbarIcon {
+    color: #fff;
+  }
+  .meun-col-sm .menuBox {
+    padding-top: 50px;
+    margin-left: 60px;
+    position: relative;
+  }
+  .meun-col-sm .menuBox .menuList {
+    list-style-type: none;
+  }
+  .meun-col-sm .menuBox .menuList .menuItem {
+    padding-bottom: 19px;
+  }
+  .meun-col-sm .menuBox .menuList .menuItem .menuLink {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .meun-col-sm .socialBoxIcon {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 26px;
+  }
+  .meun-col-sm .socialBoxIcon .socialIcon {
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+  }
+  .meun-col-sm .socialBoxIcon .socialIcon .iconLink {
+    color: #ffffff;
+  }
+  .meun-col-sm .socialBoxIcon .socialIcon .iconLink:hover {
+    color: #E3872D;
+  }
+  .meun-col-sm .arrowBox {
+    position: absolute;
+    top: 400px;
+    left: 198px;
+  }
+  .meun-col-sm .arrowBox .btnArrow {
+    cursor: pointer;
+    background: #E3872D;
+    color: #fff;
+    border-radius: 0;
+    position: absolute;
+  }
+  .meun-col-sm .arrowBox .btn-left {
+    top: 8px;
+    left: 24px;
+    height: 36px;
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .meun-col-sm {
+    background: #091a32;
+    padding-bottom: 20px;
+  }
+  .meun-col-sm .logoBox {
+    padding-top: 50px;
+    margin: auto;
+  }
+  .meun-col-sm .navbarIcon {
+    color: #fff;
+  }
+  .meun-col-sm .menuBox {
+    padding-top: 50px;
+    margin-left: 60px;
+    position: relative;
+  }
+  .meun-col-sm .menuBox .menuList {
+    list-style-type: none;
+  }
+  .meun-col-sm .menuBox .menuList .menuItem {
+    padding-bottom: 19px;
+  }
+  .meun-col-sm .menuBox .menuList .menuItem .menuLink {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .meun-col-sm .socialBoxIcon {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 26px;
+  }
+  .meun-col-sm .socialBoxIcon .socialIcon {
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+  }
+  .meun-col-sm .socialBoxIcon .socialIcon .iconLink {
+    color: #ffffff;
+  }
+  .meun-col-sm .socialBoxIcon .socialIcon .iconLink:hover {
+    color: #E3872D;
+  }
+  .meun-col-sm .arrowBox {
+    position: absolute;
+    top: 400px;
+    left: 198px;
+  }
+  .meun-col-sm .arrowBox .btnArrow {
+    cursor: pointer;
+    background: #E3872D;
+    color: #fff;
+    border-radius: 0;
+    position: absolute;
+  }
+  .meun-col-sm .arrowBox .btn-left {
+    top: 8px;
+    left: 24px;
+    height: 36px;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .meun-col-sm {
+    background: #091a32;
+    padding-bottom: 20px;
+  }
+  .meun-col-sm .logoBox {
+    padding-top: 50px;
+    margin: auto;
+  }
+  .meun-col-sm .navbarIcon {
+    color: #fff;
+  }
+  .meun-col-sm .menuBox {
+    padding-top: 50px;
+    margin-left: 60px;
+    position: relative;
+  }
+  .meun-col-sm .menuBox .menuList {
+    list-style-type: none;
+  }
+  .meun-col-sm .menuBox .menuList .menuItem {
+    padding-bottom: 19px;
+  }
+  .meun-col-sm .menuBox .menuList .menuItem .menuLink {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .meun-col-sm .socialBoxIcon {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 26px;
+  }
+  .meun-col-sm .socialBoxIcon .socialIcon {
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+  }
+  .meun-col-sm .socialBoxIcon .socialIcon .iconLink {
+    color: #ffffff;
+  }
+  .meun-col-sm .socialBoxIcon .socialIcon .iconLink:hover {
+    color: #E3872D;
+  }
+  .meun-col-sm .arrowBox {
+    position: absolute;
+    top: 400px;
+    left: 198px;
+  }
+  .meun-col-sm .arrowBox .btnArrow {
+    cursor: pointer;
+    background: #E3872D;
+    color: #fff;
+    border-radius: 0;
+    position: absolute;
+  }
+  .meun-col-sm .arrowBox .btn-left {
+    top: 8px;
+    left: 24px;
+    height: 36px;
+    display: block;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .meun-col {
     background: #091a32;
-    position: fixed;
     height: 655px;
   }
   .meun-col .logoBox {
