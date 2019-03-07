@@ -240,7 +240,7 @@ body {
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .meun-col {
         background: $blueColor;
-        height: 655px;
+        height: 100%;
         .logoBox {
             padding-top: 50px;
             padding-bottom: 50px;
@@ -308,7 +308,7 @@ body {
     .meun-col {
         background: $blueColor;
         position: fixed;
-        height: 655px;
+        height: 100%;
         .logoBox {
             padding-top: 50px;
             padding-bottom: 50px;

@@ -233,7 +233,7 @@ body {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .meun-col {
     background: #091a32;
-    height: 655px;
+    height: 100%;
   }
   .meun-col .logoBox {
     padding-top: 50px;
@@ -300,7 +300,7 @@ body {
   .meun-col {
     background: #091a32;
     position: fixed;
-    height: 655px;
+    height: 100%;
   }
   .meun-col .logoBox {
     padding-top: 50px;
