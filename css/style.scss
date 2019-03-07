@@ -5,6 +5,7 @@
 }
 
 $blueColor: #091a32;
+$lightBlueColor: #091a32a8;
 $orangColor: #E3872D;
 body {
     font-family: "Montserrat", sans-serif;
@@ -391,11 +392,18 @@ body {
         }
     }
 }
-
+#bgVedio {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2000;
+    top: 0;
+}
 .banner {
-    background: $blueColor;
+    background: $lightBlueColor;
     padding-top: 145px;
     padding-bottom: 155px;
+    
     .personal-img {
         width: 220px;
         height: 220px;
@@ -448,7 +456,7 @@ body {
 
 .aboutSection {
     padding-top: 100px;
-    background: #00000000;
+    background: #ffffff;
     color: #000;
     .secStyle {
         padding-left: 15px;

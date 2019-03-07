@@ -385,8 +385,16 @@ body {
   display: none;
 }
 
+#bgVedio {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2000;
+  top: 0;
+}
+
 .banner {
-  background: #091a32;
+  background: #091a32a8;
   padding-top: 145px;
   padding-bottom: 155px;
 }
@@ -449,7 +457,7 @@ body {
 
 .aboutSection {
   padding-top: 100px;
-  background: #00000000;
+  background: #ffffff;
   color: #000;
 }
 
