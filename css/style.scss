@@ -392,6 +392,7 @@ body {
         }
     }
 }
+
 #bgVedio {
     position: fixed;
     min-width: 100%;
@@ -399,11 +400,11 @@ body {
     z-index: -2000;
     top: 0;
 }
+
 .banner {
     background: $lightBlueColor;
     padding-top: 145px;
     padding-bottom: 155px;
-    
     .personal-img {
         width: 220px;
         height: 220px;
@@ -447,6 +448,10 @@ body {
     .arrow-icon {
         color: #fff;
         text-decoration: none;
+        width: 75px;
+        height: 50px;
+        margin: auto;
+        padding-top: 23px;
     }
     .arrow-icon:hover {
         color: #fff;
@@ -455,7 +460,7 @@ body {
 }
 
 .aboutSection {
-    padding-top: 100px;
+    padding-top: 60px;
     background: #ffffff;
     color: #000;
     .secStyle {
@@ -559,7 +564,7 @@ body {
 
 .abilitieSection {
     background: #f5f7fd;
-    padding-top: 90px;
+    padding-top: 60px;
     .secHead {
         font-size: 24px;
         color: $blueColor;
@@ -606,7 +611,7 @@ body {
 
 .serviceSection {
     background: #fff;
-    padding-top: 100px;
+    padding-top: 60px;
     .secHead {
         border-left: 6px solid $orangColor;
         padding-left: 25px;
@@ -728,7 +733,7 @@ body {
 }
 
 .paddTop {
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .latestNewsSection {
@@ -775,6 +780,15 @@ body {
                 padding-top: 12px;
             }
         }
+    }
+    .card.one {
+        animation-delay: 300ms;
+    }
+    .card.two {
+        animation-delay: 600ms;
+    }
+    .card.three {
+        animation-delay: 900ms;
     }
 }
 
@@ -847,7 +861,9 @@ body {
     z-index: 1000;
     .btnUp {
         background: $orangColor;
-        color: #fff;
+        .homeLink {
+            color: #fff;
+        }
     }
 }
 
@@ -858,5 +874,20 @@ body {
         color: #ffffff;
         padding-top: 55px;
         padding-bottom: 55px;
+    }
+}
+
+.homeScroll {
+    animation: scrollUp 5s ease;
+}
+.zoom{
+    animation: zoom 2s ease both;
+}
+@keyframes zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
     }
 }

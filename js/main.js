@@ -23,7 +23,7 @@ $(document).ready(function () {
         $(".fullBody").removeClass("col-lg-12");
 
         $(".pageFooter").removeClass("col-lg-12");
-        $(".pageFooter").addClass("col-lg-9 float-right"); 
+        $(".pageFooter").addClass("col-lg-9 float-right");
 
         $(".paddBottom").addClass("paddLRInMOpen");
         $(".paddBottom").removeClass("paddLeftRight");
@@ -36,14 +36,49 @@ $(document).ready(function () {
     });
     // Hide menu in small Screen
     var screenWidth = $(window).width();
-    if(screenWidth <= 768 ){
+    if (screenWidth <= 768) {
         $(".meun-col").hide();
         $(".imgBox").hide();
-    }else{
-        $(".meun-col").show();   
+    } else {
+        $(".meun-col").show();
         $(".imgBox").show();
     }
-    if(screenWidth > 768){
+    if (screenWidth > 768) {
         $(".pageMenu").hide();
     }
+
+    var scrollLink = $('.scroll');
+
+    // Smooth scrolling
+    scrollLink.click(function (e) {
+        e.preventDefault();
+        $('body,html').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000);
+    });
+
+    // Active link switching
+    $(window).scroll(function () {
+        var scrollbarLocation = $(this).scrollTop();
+
+        scrollLink.each(function () {
+
+            var sectionOffset = $(this.hash).offset().top - 20;
+
+            if (sectionOffset <= scrollbarLocation) {
+                $(this).parent().addClass('active');
+                $(this).parent().siblings().removeClass('active');
+            }
+        })
+
+    })
+
+    $(".servCard").hover(function () {
+        // over
+        $(this).addClass("zoom");
+    }, function () {
+        // out
+        $(this).removeClass("zoom");
+    }
+    );
 });

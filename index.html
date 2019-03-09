@@ -11,6 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -31,32 +32,32 @@
                             <div class="menuBox">
                                 <ul class="menuList">
                                     <li class="menuItem">
-                                        <a href="#" class="menuLink">
+                                        <a href="#home" class="menuLink scroll">
                                             Home
                                         </a>
                                     </li>
                                     <li class="menuItem">
-                                        <a href="#" class="menuLink">
+                                        <a href="#About" class="menuLink scroll">
                                             About
                                         </a>
                                     </li>
                                     <li class="menuItem">
-                                        <a href="#" class="menuLink">
+                                        <a href="#Service" class="menuLink scroll">
                                             Services
                                         </a>
                                     </li>
                                     <li class="menuItem">
-                                        <a href="#" class="menuLink">
+                                        <a href="#Portfolio" class="menuLink scroll">
                                             Portfolio
                                         </a>
                                     </li>
                                     <li class="menuItem">
-                                        <a href="#" class="menuLink">
+                                        <a href="#News" class="menuLink scroll">
                                             News
                                         </a>
                                     </li>
                                     <li class="menuItem">
-                                        <a href="#" class="menuLink">
+                                        <a href="#Contact" class="menuLink scroll">
                                             Contact
                                         </a>
                                     </li>
@@ -187,7 +188,7 @@
                     <source src="img/Nature Beautiful short video 720p HD.mp4" type="video/mp4">
                 </video>
                 <!-- page Banner -->
-                <div class="banner">
+                <div class="banner" id="home">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="arrowBox">
@@ -215,9 +216,9 @@
                                     </p>
                                 </div>
                                 <div id="arrow">
-                                    <a class="arrow-icon" href="#">
+                                    <a class="arrow-icon scroll" href="#About">
                                         <span>
-                                            <i class="fas fa-2x fa-angle-double-down"></i>
+                                            <i class="fas fa-2x fa-angle-double-down animated wow infinite fadeInDown"></i>
                                         </span>
                                     </a>
                                 </div>
@@ -228,7 +229,7 @@
                 <!-- Main Content -->
                 <main>
                     <!-- About Me -->
-                    <div class="aboutSection paddLRInMOpen paddBottom ">
+                    <div class="aboutSection paddLRInMOpen paddBottom " id="About">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -474,7 +475,7 @@
                         </div>
                     </div>
                     <!-- Our services -->
-                    <div class="serviceSection paddLRInMOpen paddBottom">
+                    <div class="serviceSection paddLRInMOpen paddBottom" id="Service">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -490,7 +491,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <div class="card">
+                                    <div class="card servCard">
                                         <span class="icon">
                                             <i class="fab fa-3x fa-js"></i>
                                         </span>
@@ -506,7 +507,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="card">
+                                    <div class="card servCard">
                                         <span class="icon">
                                             <i class="fas fa-3x fa-mobile-alt"></i>
                                         </span>
@@ -522,7 +523,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="card">
+                                    <div class="card servCard">
                                         <span class="icon">
                                             <i class="fas fa-3x fa-desktop"></i>
                                         </span>
@@ -538,7 +539,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="card">
+                                    <div class="card servCard">
                                         <span class="icon">
                                             <i class="fas fa-3x fa-share-alt"></i>
                                         </span>
@@ -554,7 +555,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="card">
+                                    <div class="card servCard">
                                         <span class="icon">
                                             <i class="far fa-3x fa-image"></i>
                                         </span>
@@ -570,7 +571,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="card">
+                                    <div class="card servCard">
                                         <span class="icon">
                                             <i class="fab fa-3x fa-adobe"></i>
                                         </span>
@@ -590,7 +591,7 @@
                         </div>
                     </div>
                     <!-- Our Creative Works -->
-                    <div class="serviceSection creativeSection paddLRInMOpen paddBottom">
+                    <div class="serviceSection creativeSection paddLRInMOpen paddBottom" id="Portfolio">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -716,7 +717,7 @@
                         </div>
                     </div>
                     <!-- LATEST NEWS -->
-                    <div class="serviceSection bgGray latestNewsSection paddLRInMOpen paddBottom">
+                    <div class="serviceSection bgGray latestNewsSection paddLRInMOpen paddBottom" id="News">
                         <div class="container-fluid">
                             <div class="row  paddTop">
                                 <div class="col-lg-12">
@@ -732,7 +733,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <div class="card">
+                                    <div class="card one fadeInUp wow animated">
                                         <img src="img/1 (1).jpg" class="cardImg" alt="image">
                                         <div class="card-body">
                                             <h6 class="cardHead">
@@ -757,7 +758,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="card">
+                                    <div class="card two fadeInUp wow animated">
                                         <img src="img/3 (1).jpg" class="cardImg" alt="image">
                                         <div class="card-body">
                                             <h6 class="cardHead">
@@ -783,7 +784,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="card">
+                                    <div class="card three fadeInUp wow animated">
                                         <img src="img/2.jpg" class="cardImg" alt="image">
                                         <div class="card-body">
                                             <h6 class="cardHead">
@@ -814,7 +815,7 @@
                         </div>
                     </div>
                     <!--Contact Us -->
-                    <div class="serviceSection paddLRInMOpen paddBottom">
+                    <div class="serviceSection paddLRInMOpen paddBottom" id="Contact">
                         <div class="container-fluid">
                             <div class="row  paddTop">
                                 <div class="col-lg-12">
@@ -890,7 +891,9 @@
                     <!-- Button Up -->
                     <div class="buttonUp">
                         <div class="btn btnUp">
-                            <i class="fas fa-angle-up"></i>
+                            <a href="#home" class="homeLink scroll">
+                                <i class="fas fa-angle-up"></i>
+                            </a>
                         </div>
                     </div>
                 </main>
@@ -920,6 +923,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- wow.js -->
+    <script src="js/wow.js">
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
     <!-- main.js -->
     <script src="js/main.js"></script>
 </body>

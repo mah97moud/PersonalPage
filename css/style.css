@@ -448,6 +448,10 @@ body {
 #arrow .arrow-icon {
   color: #fff;
   text-decoration: none;
+  width: 75px;
+  height: 50px;
+  margin: auto;
+  padding-top: 23px;
 }
 
 #arrow .arrow-icon:hover {
@@ -456,7 +460,7 @@ body {
 }
 
 .aboutSection {
-  padding-top: 100px;
+  padding-top: 60px;
   background: #ffffff;
   color: #000;
 }
@@ -579,7 +583,7 @@ body {
 
 .abilitieSection {
   background: #f5f7fd;
-  padding-top: 90px;
+  padding-top: 60px;
 }
 
 .abilitieSection .secHead {
@@ -636,7 +640,7 @@ body {
 
 .serviceSection {
   background: #fff;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .serviceSection .secHead {
@@ -770,7 +774,7 @@ body {
 }
 
 .paddTop {
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 .latestNewsSection .card {
@@ -824,6 +828,21 @@ body {
   color: #fff;
   font-weight: 600;
   padding-top: 12px;
+}
+
+.latestNewsSection .card.one {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.latestNewsSection .card.two {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.latestNewsSection .card.three {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
 .contactUsSection .getInTouch .contHead {
@@ -901,6 +920,9 @@ body {
 
 .buttonUp .btnUp {
   background: #E3872D;
+}
+
+.buttonUp .btnUp .homeLink {
   color: #fff;
 }
 
@@ -913,5 +935,37 @@ body {
   color: #ffffff;
   padding-top: 55px;
   padding-bottom: 55px;
+}
+
+.homeScroll {
+  -webkit-animation: scrollUp 5s ease;
+          animation: scrollUp 5s ease;
+}
+
+.zoom {
+  -webkit-animation: zoom 2s ease both;
+          animation: zoom 2s ease both;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 /*# sourceMappingURL=style.css.map */
