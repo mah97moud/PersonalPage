@@ -422,9 +422,16 @@ body {
     .job {
         margin: auto;
         text-align: center;
+        color: #fff;
+        font-size: 24px;
+        float: left;
+        margin-left: 40%;
         .text {
-            color: #fff;
+            float: right;
             font-size: 24px;
+            margin-left: 10px;
+            color: $orangColor;
+            font-weight: 700;
         }
     }
 }
@@ -880,14 +887,20 @@ body {
 .homeScroll {
     animation: scrollUp 5s ease;
 }
-.zoom{
+
+.zoom {
     animation: zoom 2s ease both;
 }
-@keyframes zoom{
-    from{
+
+@keyframes zoom {
+    from {
         transform: scale(1);
     }
-    to{
+    to {
         transform: scale(1.1);
     }
+}
+
+.blueHover {
+    animation: hoverColor 0.5s linear forwards;
 }

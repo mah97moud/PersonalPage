@@ -1,3 +1,17 @@
+// function animate_text() {
+
+//     "use strict";
+
+//     var animateSpan = jQuery('.job-title');
+
+//     animateSpan.typed({
+//         strings: ["Freelancer", "UI/UX Designer", "Web Developer"],
+//         loop: true,
+//         startDelay: 1e3,
+//         backDelay: 2e3
+//     });
+// }
+
 $(document).ready(function () {
     $(".btn-left").on("click", function () {
         $(".meun-col").hide()
@@ -58,20 +72,20 @@ $(document).ready(function () {
     });
 
     // Active link switching
-    $(window).scroll(function () {
-        var scrollbarLocation = $(this).scrollTop();
+    // $(window).scroll(function () {
+    //     var scrollbarLocation = $(this).scrollTop();
 
-        scrollLink.each(function () {
+    //     scrollLink.each(function () {
 
-            var sectionOffset = $(this.hash).offset().top - 20;
+    //         var sectionOffset = $(this.hash).offset().top - 20;
 
-            if (sectionOffset <= scrollbarLocation) {
-                $(this).parent().addClass('active');
-                $(this).parent().siblings().removeClass('active');
-            }
-        })
+    //         if (sectionOffset <= scrollbarLocation) {
+    //             $(this).parent().addClass('active');
+    //             $(this).parent().siblings().removeClass('active');
+    //         }
+    //     })
 
-    })
+    // })
 
     $(".servCard").hover(function () {
         // over
@@ -81,4 +95,67 @@ $(document).ready(function () {
         $(this).removeClass("zoom");
     }
     );
+    $(".btn").hover(function () {
+        // over
+        $(this).addClass("blueHover");
+    }, function () {
+        // out
+        $(this).removeClass("blueHover");
+    }
+    );
+
 });
+
+
+
+class jobWrite {
+    constructor(word, wordRotate, wordPeriod) {
+        this.wordRotate = wordRotate;
+        this.word = word;
+        this.loopNum = 0;
+        this.wordPeriod = parseInt(wordPeriod, 10) || 2000;
+        this.text = '';
+        this.tick();
+        this.isDeleting = false;
+    }
+    tick() {
+        var i = this.loopNum % this.wordRotate.length;
+        var fullTxt = this.wordRotate[i];
+        if (this.isDeleting) {
+            this.text = fullTxt.substring(0, this.text.length - 1);
+        }
+        else {
+            this.text = fullTxt.substring(0, this.text.length + 1);
+        }
+        this.word.innerHTML = ' <span class= "job-title"> ' + this.text + '</span>';
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+        if (this.isDeleting) {
+            delta /= 2;
+        }
+        if (!this.isDeleting && this.text === fullTxt) {
+            delta = this.wordPeriod;
+            this.isDeleting = true;
+        }
+        else if (this.isDeleting && this.text === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    }
+}
+
+
+window.onload = function () {
+    var element = document.getElementsByClassName('text');
+    for (var i = 0; i < element.length; i++) {
+        var wordRotate = element[i].getAttribute('data-type');
+        var wordPeriod = element[i].getAttribute('data-period');
+        if (wordPeriod) {
+            new jobWrite(element[i], JSON.parse(wordRotate), wordPeriod);
+        }
+    }
+}
