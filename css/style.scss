@@ -244,306 +244,6 @@ body {
     }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .meun-col-sm {
-        background: $lightBlueColor;
-        padding-bottom: 20px;
-        .logoBox {
-            padding-top: 50px;
-            margin: auto;
-        }
-        .navbarIcon {
-            color: #fff;
-        }
-        .menuBox {
-            padding-top: 50px;
-            margin-left: 60px;
-            position: relative;
-            .menuList {
-                list-style-type: none;
-                .menuItem {
-                    padding-bottom: 19px;
-                    .menuLink {
-                        text-decoration: none;
-                        color: #fff;
-                        font-size: 16px;
-                        font-weight: 500;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-        }
-        .socialBoxIcon {
-            margin: auto;
-            padding-top: 15px;
-            padding-bottom: 26px;
-            .socialIcon {
-                display: block;
-                float: left;
-                width: 35px;
-                height: 35px;
-                text-align: center;
-                .iconLink {
-                    color: #ffffff;
-                }
-                .iconLink:hover {
-                    color: $orangColor;
-                }
-            }
-        }
-        .arrowBox {
-            position: absolute;
-            top: 400px;
-            left: 198px;
-            .btnArrow {
-                cursor: pointer;
-                background: $orangColor;
-                color: #fff;
-                border-radius: 0;
-                position: absolute;
-            }
-            .btn-left {
-                top: 8px;
-                left: 24px;
-                height: 36px;
-                display: block;
-            }
-        }
-    }
-    .banner {
-        .job {
-            margin-left: 18%;
-        }
-    }
-    .serviceSection {
-        .secHead {
-            .text {
-                font-size: 45px;
-            }
-        }
-    }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .meun-col-sm {
-        background: $lightBlueColor;
-        padding-bottom: 20px;
-        .logoBox {
-            padding-top: 50px;
-            margin: auto;
-        }
-        .navbarIcon {
-            color: #fff;
-        }
-        .menuBox {
-            padding-top: 50px;
-            margin-left: 60px;
-            position: relative;
-            .menuList {
-                list-style-type: none;
-                .menuItem {
-                    padding-bottom: 19px;
-                    .menuLink {
-                        text-decoration: none;
-                        color: #fff;
-                        font-size: 16px;
-                        font-weight: 500;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-        }
-        .socialBoxIcon {
-            margin: auto;
-            padding-top: 15px;
-            padding-bottom: 26px;
-            .socialIcon {
-                display: block;
-                float: left;
-                width: 35px;
-                height: 35px;
-                text-align: center;
-                .iconLink {
-                    color: #ffffff;
-                }
-                .iconLink:hover {
-                    color: $orangColor;
-                }
-            }
-        }
-        .arrowBox {
-            position: absolute;
-            top: 400px;
-            left: 198px;
-            .btnArrow {
-                cursor: pointer;
-                background: $orangColor;
-                color: #fff;
-                border-radius: 0;
-                position: absolute;
-            }
-            .btn-left {
-                top: 8px;
-                left: 24px;
-                height: 36px;
-                display: block;
-            }
-        }
-    }
-    .banner {
-        .job {
-            margin-left: 37%;
-        }
-    }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .meun-col {
-        background: $blueColor;
-        height: 100%;
-        .logoBox {
-            padding-top: 50px;
-            padding-bottom: 50px;
-            margin: auto;
-        }
-        .menuBox {
-            padding-top: 50px;
-            margin-left: 60px;
-            position: relative;
-            .menuList {
-                list-style-type: none;
-                .menuItem {
-                    padding-bottom: 19px;
-                    .menuLink {
-                        text-decoration: none;
-                        color: #fff;
-                        font-size: 16px;
-                        font-weight: 500;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-        }
-        .socialBoxIcon {
-            margin: auto;
-            padding-top: 15px;
-            padding-bottom: 26px;
-            .socialIcon {
-                display: block;
-                float: left;
-                width: 35px;
-                height: 35px;
-                text-align: center;
-                .iconLink {
-                    color: #ffffff;
-                }
-                .iconLink:hover {
-                    color: $orangColor;
-                }
-            }
-        }
-        .arrowBox {
-            position: absolute;
-            top: 400px;
-            left: 198px;
-            .btnArrow {
-                cursor: pointer;
-                background: $orangColor;
-                color: #fff;
-                border-radius: 0;
-                position: absolute;
-            }
-            .btn-left {
-                top: 8px;
-                left: 24px;
-                height: 36px;
-                display: block;
-            }
-        }
-    }
-    .banner {
-        .job {
-            margin-left: 35%;
-        }
-    }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    .meun-col {
-        background: $blueColor;
-        position: fixed;
-        height: 100%;
-        .logoBox {
-            padding-top: 50px;
-            padding-bottom: 50px;
-            margin: auto;
-        }
-        .menuBox {
-            padding-top: 50px;
-            margin-left: 60px;
-            position: relative;
-            .menuList {
-                list-style-type: none;
-                .menuItem {
-                    padding-bottom: 19px;
-                    .menuLink {
-                        text-decoration: none;
-                        color: #fff;
-                        font-size: 16px;
-                        font-weight: 500;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-        }
-        .socialBoxIcon {
-            margin: auto;
-            padding-top: 15px;
-            padding-bottom: 26px;
-            .socialIcon {
-                display: block;
-                float: left;
-                width: 35px;
-                height: 35px;
-                text-align: center;
-                .iconLink {
-                    color: #ffffff;
-                }
-                .iconLink:hover {
-                    color: $orangColor;
-                }
-            }
-        }
-        .arrowBox {
-            position: absolute;
-            top: 400px;
-            left: 279px;
-            .btnArrow {
-                cursor: pointer;
-                background: $orangColor;
-                color: #fff;
-                border-radius: 0;
-                position: absolute;
-            }
-            .btn-left {
-                top: 8px;
-                left: 24px;
-                height: 36px;
-                display: block;
-            }
-        }
-    }
-    .banner {
-        .job {
-            margin-left: 40%;
-        }
-    }
-}
-
 .fullBody {
     .arrowBox {
         position: fixed;
@@ -610,6 +310,20 @@ body {
     color: #000;
     .secStyle {
         padding-left: 15px;
+        .infoHead {
+            line-height: 1;
+            font-size: 24px;
+            font-weight: 500;
+            height: 60px;
+            
+            .text {
+                font-size: 20px;
+                color: $lightBlueColor;
+                font-weight: 700;
+                display: inline;
+                
+            }
+        }
     }
     .secHead {
         border-left: 6px solid $orangColor;
@@ -642,12 +356,6 @@ body {
             bottom: 16px;
         }
     }
-    .infoHead {
-        line-height: 1;
-        margin-bottom: 18px;
-        font-size: 24px;
-        font-weight: 500;
-    }
     .infoText {
         color: #333;
         background: #00000000;
@@ -656,6 +364,7 @@ body {
         letter-spacing: 0.5px;
         word-wrap: break-word;
         font-weight: 600;
+        
         span {
             color: $orangColor;
         }
@@ -1006,4 +715,304 @@ body {
 
 .blueHover {
     animation: hoverColor 0.5s linear forwards;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .meun-col-sm {
+        background: $lightBlueColor;
+        padding-bottom: 20px;
+        .logoBox {
+            padding-top: 50px;
+            margin: auto;
+        }
+        .navbarIcon {
+            color: #fff;
+        }
+        .menuBox {
+            padding-top: 50px;
+            margin-left: 60px;
+            position: relative;
+            .menuList {
+                list-style-type: none;
+                .menuItem {
+                    padding-bottom: 19px;
+                    .menuLink {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .socialBoxIcon {
+            margin: auto;
+            padding-top: 15px;
+            padding-bottom: 26px;
+            .socialIcon {
+                display: block;
+                float: left;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                .iconLink {
+                    color: #ffffff;
+                }
+                .iconLink:hover {
+                    color: $orangColor;
+                }
+            }
+        }
+        .arrowBox {
+            position: absolute;
+            top: 400px;
+            left: 198px;
+            .btnArrow {
+                cursor: pointer;
+                background: $orangColor;
+                color: #fff;
+                border-radius: 0;
+                position: absolute;
+            }
+            .btn-left {
+                top: 8px;
+                left: 24px;
+                height: 36px;
+                display: block;
+            }
+        }
+    }
+    .banner {
+        .job {
+            margin-left: 18%;
+        }
+    }
+    .serviceSection {
+        .secHead {
+            .text {
+                font-size: 45px;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .meun-col-sm {
+        background: $lightBlueColor;
+        padding-bottom: 20px;
+        .logoBox {
+            padding-top: 50px;
+            margin: auto;
+        }
+        .navbarIcon {
+            color: #fff;
+        }
+        .menuBox {
+            padding-top: 50px;
+            margin-left: 60px;
+            position: relative;
+            .menuList {
+                list-style-type: none;
+                .menuItem {
+                    padding-bottom: 19px;
+                    .menuLink {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .socialBoxIcon {
+            margin: auto;
+            padding-top: 15px;
+            padding-bottom: 26px;
+            .socialIcon {
+                display: block;
+                float: left;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                .iconLink {
+                    color: #ffffff;
+                }
+                .iconLink:hover {
+                    color: $orangColor;
+                }
+            }
+        }
+        .arrowBox {
+            position: absolute;
+            top: 400px;
+            left: 198px;
+            .btnArrow {
+                cursor: pointer;
+                background: $orangColor;
+                color: #fff;
+                border-radius: 0;
+                position: absolute;
+            }
+            .btn-left {
+                top: 8px;
+                left: 24px;
+                height: 36px;
+                display: block;
+            }
+        }
+    }
+    .banner {
+        .job {
+            margin-left: 37%;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .meun-col {
+        background: $blueColor;
+        height: 100%;
+        .logoBox {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin: auto;
+        }
+        .menuBox {
+            padding-top: 50px;
+            margin-left: 60px;
+            position: relative;
+            .menuList {
+                list-style-type: none;
+                .menuItem {
+                    padding-bottom: 19px;
+                    .menuLink {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .socialBoxIcon {
+            margin: auto;
+            padding-top: 15px;
+            padding-bottom: 26px;
+            .socialIcon {
+                display: block;
+                float: left;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                .iconLink {
+                    color: #ffffff;
+                }
+                .iconLink:hover {
+                    color: $orangColor;
+                }
+            }
+        }
+        .arrowBox {
+            position: absolute;
+            top: 400px;
+            left: 198px;
+            .btnArrow {
+                cursor: pointer;
+                background: $orangColor;
+                color: #fff;
+                border-radius: 0;
+                position: absolute;
+            }
+            .btn-left {
+                top: 8px;
+                left: 24px;
+                height: 36px;
+                display: block;
+            }
+        }
+    }
+    .banner {
+        .job {
+            margin-left: 35%;
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .meun-col {
+        background: $blueColor;
+        position: fixed;
+        height: 100%;
+        .logoBox {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin: auto;
+        }
+        .menuBox {
+            padding-top: 50px;
+            margin-left: 60px;
+            position: relative;
+            .menuList {
+                list-style-type: none;
+                .menuItem {
+                    padding-bottom: 19px;
+                    .menuLink {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .socialBoxIcon {
+            margin: auto;
+            padding-top: 15px;
+            padding-bottom: 26px;
+            .socialIcon {
+                display: block;
+                float: left;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                .iconLink {
+                    color: #ffffff;
+                }
+                .iconLink:hover {
+                    color: $orangColor;
+                }
+            }
+        }
+        .arrowBox {
+            position: absolute;
+            top: 400px;
+            left: 279px;
+            .btnArrow {
+                cursor: pointer;
+                background: $orangColor;
+                color: #fff;
+                border-radius: 0;
+                position: absolute;
+            }
+            .btn-left {
+                top: 8px;
+                left: 24px;
+                height: 36px;
+                display: block;
+            }
+        }
+    }
+    .banner {
+        .job {
+            margin-left: 40%;
+        }
+    }
 }
