@@ -1,16 +1,3 @@
-// function animate_text() {
-
-//     "use strict";
-
-//     var animateSpan = jQuery('.job-title');
-
-//     animateSpan.typed({
-//         strings: ["Freelancer", "UI/UX Designer", "Web Developer"],
-//         loop: true,
-//         startDelay: 1e3,
-//         backDelay: 2e3
-//     });
-// }
 
 $(document).ready(function () {
     $(".btn-left").on("click", function () {
