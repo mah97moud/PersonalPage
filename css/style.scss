@@ -29,6 +29,128 @@ body {
     padding-bottom: 100px;
 }
 
+.banner {
+    background: $lightBlueColor;
+    padding-top: 145px;
+    padding-bottom: 155px;
+    .personal-img {
+        width: 220px;
+        height: 220px;
+        border: 8px solid #ffffff80;
+        border-radius: 50%;
+        margin: auto;
+        .prof-img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+    .name {
+        margin: auto;
+    }
+    .job {
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        float: left;
+        .text {
+            float: right;
+            font-size: 24px;
+            margin-left: 10px;
+            color: $orangColor;
+            font-weight: 700;
+        }
+    }
+}
+
+.serviceSection {
+    background: #fff;
+    padding-top: 60px;
+    .secHead {
+        border-left: 6px solid $orangColor;
+        padding-left: 25px;
+        line-height: 1;
+        margin-bottom: 100px;
+        .text {
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: -.5px;
+            margin-bottom: 0;
+            color: #000;
+        }
+        .belowText {
+            padding-bottom: 5px;
+            margin-bottom: 0;
+        }
+    }
+    .card {
+        padding: 40px;
+        margin-bottom: 30px;
+        box-shadow: 0.5px 0.5px 18px 0px #ccc;
+        .icon {
+            display: block;
+            width: 45px;
+            height: 45px;
+            color: $orangColor;
+            margin-bottom: 30px;
+            svg {
+                color: #E3872D;
+            }
+        }
+        .card-body {
+            padding: 0;
+            .cardHead {
+                color: #000;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.creativeSection {
+    .creativeNavBar {
+        .NavBarNav {
+            list-style: none;
+            .navItem {
+                float: left;
+                padding-right: 45px;
+                font-size: 16px;
+                font-weight: 600;
+                .navLink {
+                    color: #000;
+                }
+                .navLink:hover {
+                    color: $orangColor;
+                    text-decoration: none;
+                }
+            }
+            .navItem.active {
+                .navLink {
+                    color: #BD0A0D;
+                }
+            }
+        }
+    }
+    .box {
+        margin-bottom: 30px;
+        width: 370px;
+        height: 400px;
+        margin: auto;
+        padding-bottom: 25px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .meun-col-sm {
@@ -93,6 +215,30 @@ body {
                 left: 24px;
                 height: 36px;
                 display: block;
+            }
+        }
+    }
+    .banner {
+        .job {
+            margin-left: 15%;
+        }
+    }
+    .serviceSection {
+        .secHead {
+            .text {
+                font-size: 45px;
+            }
+        }
+    }
+    .creativeSection {
+        .creativeNavBar {
+            .NavBarNav {
+                .navItem {
+                    float: left;
+                    padding-right: 13px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
             }
         }
     }
@@ -165,6 +311,18 @@ body {
             }
         }
     }
+    .banner {
+        .job {
+            margin-left: 18%;
+        }
+    }
+    .serviceSection {
+        .secHead {
+            .text {
+                font-size: 45px;
+            }
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -234,6 +392,11 @@ body {
             }
         }
     }
+    .banner {
+        .job {
+            margin-left: 37%;
+        }
+    }
 }
 
 // Large devices (desktops, 992px and up)
@@ -299,6 +462,11 @@ body {
                 height: 36px;
                 display: block;
             }
+        }
+    }
+    .banner {
+        .job {
+            margin-left: 35%;
         }
     }
 }
@@ -369,6 +537,11 @@ body {
             }
         }
     }
+    .banner {
+        .job {
+            margin-left: 40%;
+        }
+    }
 }
 
 .fullBody {
@@ -399,41 +572,6 @@ body {
     min-height: 100%;
     z-index: -2000;
     top: 0;
-}
-
-.banner {
-    background: $lightBlueColor;
-    padding-top: 145px;
-    padding-bottom: 155px;
-    .personal-img {
-        width: 220px;
-        height: 220px;
-        border: 8px solid #ffffff80;
-        border-radius: 50%;
-        margin: auto;
-        .prof-img {
-            width: 100%;
-            border-radius: 50%;
-        }
-    }
-    .name {
-        margin: auto;
-    }
-    .job {
-        margin: auto;
-        text-align: center;
-        color: #fff;
-        font-size: 24px;
-        float: left;
-        margin-left: 40%;
-        .text {
-            float: right;
-            font-size: 24px;
-            margin-left: 10px;
-            color: $orangColor;
-            font-weight: 700;
-        }
-    }
 }
 
 #title {
@@ -669,41 +807,6 @@ body {
 
 .mrgBottom-30 {
     margin-bottom: 35px;
-}
-
-.creativeSection {
-    .creativeNavBar {
-        .NavBarNav {
-            list-style: none;
-            .navItem {
-                float: left;
-                padding-right: 45px;
-                font-size: 16px;
-                font-weight: 600;
-                .navLink {
-                    color: #000;
-                }
-                .navLink:hover {
-                    color: $orangColor;
-                    text-decoration: none;
-                }
-            }
-            .navItem.active {
-                .navLink {
-                    color: #BD0A0D;
-                }
-            }
-        }
-    }
-    .box {
-        margin-bottom: 30px;
-        width: 370px;
-        height: 400px;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
 }
 
 .feedbackSection {
