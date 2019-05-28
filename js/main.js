@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $(".btn-left").on("click", function () {
         $(".meun-col").hide()
@@ -58,7 +57,7 @@ $(document).ready(function () {
         }, 1000);
     });
 
-    // Active link switching
+    // activRedLink link switching
     // $(window).scroll(function () {
     //     var scrollbarLocation = $(this).scrollTop();
 
@@ -67,8 +66,8 @@ $(document).ready(function () {
     //         var sectionOffset = $(this.hash).offset().top - 20;
 
     //         if (sectionOffset <= scrollbarLocation) {
-    //             $(this).parent().addClass('active');
-    //             $(this).parent().siblings().removeClass('active');
+    //             $(this).parent().addClass('activRedLink');
+    //             $(this).parent().siblings().removeClass('activRedLink');
     //         }
     //     })
 
@@ -80,16 +79,15 @@ $(document).ready(function () {
     }, function () {
         // out
         $(this).removeClass("zoom");
-    }
-    );
+    });
     $(".btn").hover(function () {
         // over
         $(this).addClass("blueHover");
     }, function () {
         // out
         $(this).removeClass("blueHover");
-    }
-    );
+    });
+
 
 });
 
@@ -110,8 +108,7 @@ class jobWrite {
         var fullTxt = this.wordRotate[i];
         if (this.isDeleting) {
             this.text = fullTxt.substring(0, this.text.length - 1);
-        }
-        else {
+        } else {
             this.text = fullTxt.substring(0, this.text.length + 1);
         }
         this.word.innerHTML = ' <span class= "job-title"> ' + this.text + '</span>';
@@ -123,8 +120,7 @@ class jobWrite {
         if (!this.isDeleting && this.text === fullTxt) {
             delta = this.wordPeriod;
             this.isDeleting = true;
-        }
-        else if (this.isDeleting && this.text === '') {
+        } else if (this.isDeleting && this.text === '') {
             this.isDeleting = false;
             this.loopNum++;
             delta = 500;
@@ -146,3 +142,110 @@ window.onload = function () {
         }
     }
 }
+
+
+// Dom Event
+// let navLink = document.querySelectorAll(".creativeNavBar .navLink");
+// console.log(navLink);
+// let All = navLink[0];
+// let design = navLink[1];
+// let Photography = navLink[2];
+// let Development = navLink[3];
+
+
+// Change Dom
+let all = document.querySelector(".all");
+console.log(all);
+let design = document.querySelector(".design");
+console.log(design);
+let photography = document.querySelector(".Photography");
+console.log(photography);
+let development = document.querySelector(".Development");
+console.log(development);
+let imgTag = document.querySelectorAll(".imgTag");
+console.log(imgTag[1]);
+console.log(imgTag[1].getAttribute("class", "DevelopmentImg"));
+let box = document.querySelectorAll("#Portfolio .box");
+let linkArray = document.querySelectorAll("#Portfolio .navLink");
+console.log(linkArray);
+let All = linkArray[0];
+console.log(linkArray[0]);
+let Design = linkArray[1];
+let Photography = linkArray[2];
+let Development = linkArray[3];
+
+All.addEventListener("click", function () {
+    imgTag[0].className = "imgTag show DevelopmentImg";
+    box[0].className = " show box ";
+    imgTag[1].className = " imgTag show PhotographyImg";
+    box[1].className = "show box ";
+    imgTag[2].className = "imgTag show designImg";
+    box[2].className = " show box";
+    imgTag[3].className = " imgTag show PhotographyImg";
+    box[3].className = "show box";
+    imgTag[4].className = "imgTag show designImg";
+    box[4].className = " show box";
+    imgTag[5].className = "imgTag show PhotographyImg";
+    box[5].className = " show box";
+    this.classList.add("activRedLink");
+    design.classList.remove("activRedLink");
+    Photography.classList.remove("activRedLink");
+    Development.classList.remove("activRedLink");
+
+});
+design.addEventListener("click", function () {
+    imgTag[0].className = "imgTag hide DevelopmentImg";
+    box[0].className = " hide box ";
+    imgTag[1].className = " imgTag hide PhotographyImg";
+    box[1].className = "hide box ";
+    imgTag[2].className = "imgTag show designImg";
+    box[2].className = " show box";
+    imgTag[3].className = " imgTag hide PhotographyImg";
+    box[3].className = "hide box";
+    imgTag[4].className = "imgTag show designImg";
+    box[4].className = " show box";
+    imgTag[5].className = "imgTag hide PhotographyImg";
+    box[5].className = " hide box";
+    this.classList.add("activRedLink");
+    All.classList.remove("activRedLink");
+    Photography.classList.remove("activRedLink");
+    Development.classList.remove("activRedLink");
+});
+Photography.addEventListener("click", function () {
+    imgTag[0].className = "imgTag hide DevelopmentImg";
+    box[0].className = " hide box ";
+    imgTag[1].className = " imgTag show PhotographyImg";
+    box[1].className = "show box ";
+    imgTag[2].className = "imgTag hide designImg";
+    box[2].className = " hide box";
+    imgTag[3].className = " imgTag show PhotographyImg";
+    box[3].className = "show box";
+    imgTag[4].className = "imgTag hide designImg";
+    box[4].className = " hide box";
+    imgTag[5].className = "imgTag show PhotographyImg";
+    box[5].className = " show box";
+    this.classList.add("activRedLink");
+    design.classList.remove("activRedLink");
+    All.classList.remove("activRedLink");
+    Development.classList.remove("activRedLink");
+
+});
+Development.addEventListener("click", function () {
+    imgTag[0].className = "imgTag show DevelopmentImg";
+    box[0].className = " show box ";
+    imgTag[1].className = " imgTag hide PhotographyImg";
+    box[1].className = "hide box ";
+    imgTag[2].className = "imgTag hide designImg";
+    box[2].className = " hide box";
+    imgTag[3].className = " imgTag hide PhotographyImg";
+    box[3].className = "hide box";
+    imgTag[4].className = "imgTag hide designImg";
+    box[4].className = " hide box";
+    imgTag[5].className = "imgTag hide PhotographyImg";
+    box[5].className = " hide box";
+    this.classList.add("activRedLink");
+    design.classList.remove("activRedLink");
+    Photography.classList.remove("activRedLink");
+    All.classList.remove("activRedLink");
+
+});

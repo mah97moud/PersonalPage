@@ -7,6 +7,7 @@
 $blueColor: #091a32;
 $lightBlueColor: #091a32a8;
 $orangColor: #E3872D;
+$redColor : #BD0A0D;
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -126,28 +127,32 @@ body {
                 .navLink {
                     color: #000;
                 }
+                .activRedLink{
+                    color: $redColor;
+                }
                 .navLink:hover {
                     color: $orangColor;
                     text-decoration: none;
                 }
             }
-            .navItem.active {
-                .navLink {
-                    color: #BD0A0D;
-                }
+            .activRedLink{
+                color: $redColor;
             }
         }
     }
     .box {
+        position: relative;
         margin-bottom: 30px;
         width: 370px;
         height: 400px;
         margin: auto;
         padding-bottom: 25px;
+        float: left;
         img {
             width: 100%;
             height: 100%;
         }
+        
     }
 }
 
@@ -716,9 +721,28 @@ body {
         transform: scale(1.1);
     }
 }
+@keyframes hoverColorBlue{
+    0%{
+        background-color: $blueColor;
+        
+    }
+    25%{
+        background-color: $blueColor;
+    }
+    50%{
+        background-color: $blueColor;
+    }
+    75%{
+        background-color: $blueColor;
+    }
+    100%{
+        background-color: $blueColor;
+    }
+
+}
 
 .blueHover {
-    animation: hoverColor 0.5s linear forwards;
+    animation: hoverColorBlue 1s ease-in;
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -1017,4 +1041,19 @@ body {
             margin-left: 40%;
         }
     }
+}
+
+.show{
+    display: block;
+
+}
+.hide{
+    display: none;
+
+}
+
+.percentageColortest{
+    background-color: $orangColor;
+            height: 100%;
+            border: .5px solid $orangColor;
 }
